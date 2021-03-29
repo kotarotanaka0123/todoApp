@@ -67,3 +67,5 @@ gem 'jquery-rails'
 
 #devise
 gem 'devise', '~> 4.2'
+
+gem 'acts_as_list', '~> 0.9.19'
