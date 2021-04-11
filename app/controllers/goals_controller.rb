@@ -47,7 +47,6 @@ class GoalsController < ApplicationController
       redirect_to(goals_url, alert: "ERROR!!") if @goal.blank?
     end
 
-    # Only allow a trusted parameter "white list" through.
     def goal_params
       params.require(:goal).permit(:title, :user_id)
     end

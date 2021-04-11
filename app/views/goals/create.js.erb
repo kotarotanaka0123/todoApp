@@ -9,6 +9,6 @@ $('.modal-backdrop').remove();
 $("#goalsIndex").append("<%= j(render @goal) %>");
 
 <% else %>
-$("#modalArea").html("<%= j(render 'goals/form', goal: @goal) %>")
+$("#modalArea").html("<%= j(render 'form', goal: @goal) %>")
 $("#modalArea").find(".modal").modal('show')
 <% end %>
