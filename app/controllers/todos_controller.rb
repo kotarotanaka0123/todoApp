@@ -17,6 +17,7 @@ class TodosController < ApplicationController
 
   # POST /todos
   def create
+    binding.pry
     @todo = @goal.todos.new(todo_params)
 
     if @todo.save

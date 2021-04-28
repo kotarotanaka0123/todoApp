@@ -23,12 +23,27 @@ class TagsController < ApplicationController
      # POST /tags
     def create
       @tag = current_user.tags.new(tag_params)
-  
-       if @tag.save
-        @status = true
-      else
-        @status = false
+      
+
+      respond_to do |format|
+        format.html { binding.pry }
+        format.json { binding.pry }
+        format.js { binding.pry }
       end
+      #   respond_to do |format|
+       
+      #  if @tag.save
+      #   @status = true
+
+      #   format.html { 
+          
+      #    binding.pry
+      #    redirect_to root_path }
+      #   format.js { binding.pry }
+      #  else
+      #   @status = false
+      #  end
+      # end
     end
   
      # PATCH/PUT /tags/1
